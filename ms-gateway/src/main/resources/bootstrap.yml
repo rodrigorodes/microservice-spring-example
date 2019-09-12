@@ -1,5 +1,10 @@
 server:
-  port: ${port:8761}
+  port: 8765
 spring:
   application:
     name: ms-gateway
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: ms-config-server

@@ -1,4 +1,4 @@
-package com.msgateway;
+package com.msdiscovery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @EnableEurekaServer
 @SpringBootApplication
-public class ApiGatewayApplication {
+public class MsDiscoveryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ApiGatewayApplication.class, args);
+		SpringApplication.run(MsDiscoveryApplication.class, args);
 	}
 
 }
