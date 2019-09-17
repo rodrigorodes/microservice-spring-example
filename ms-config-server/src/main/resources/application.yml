@@ -1,4 +1,9 @@
 spring:
+  profiles:
+    active: native
+---
+spring:
+  profiles: git
   cloud:
     config:
       server:
@@ -6,3 +11,7 @@ spring:
           uri: https://github.com/rodrigorodes/microservices/
           search-paths:
             - "ms-config-properties/{application}/{profile}"
+            - "ms-config-properties/global/{profile}"
+
+
+            

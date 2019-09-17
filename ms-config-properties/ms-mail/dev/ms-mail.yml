@@ -10,9 +10,13 @@ spring:
     url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     username: sa
     password:
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic:
+      userCreated: USER_CREATED_TOPIC
   mail:
     host: smtp.gmail.com
-    port: 587
+    port: 587  
     username: YOUR_GMAIL_USERNAME
     password: YOUR_GMAIL_PASSWORD
     properties.mail.smtp:
@@ -20,4 +24,4 @@ spring:
       starttls.enable: true
 security:
   basic:
-    enabled: false
+    enabled: true
